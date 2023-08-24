@@ -1,15 +1,18 @@
-# Описание данных
-1. longitude — широта;<br>
-2. latitude — долгота;<br>
-3. housing_median_age — медианный возраст жителей жилого массива;<br>
-4. total_rooms — общее количество комнат в домах жилого массива;<br>
-5. total_bedrooms — общее количество спален в домах жилого массива;<br>
-6. population — количество человек, которые проживают в жилом массиве;<br>
-7. households — количество домовладений в жилом массиве;<br>
-8. median_income — медианный доход жителей жилого массива;<br>
-9. median_house_value — медианная стоимость дома в жилом массиве;<br>
-10. ocean_proximity — близость к океану.<br>
 # Задачи
-На основе данных нужно предсказать медианную стоимость дома в жилом массиве — median_house_value. Обучитm модель и оценить качество модели используя метрики RMSE, MAE и R2.
+Сервис по продаже квартир закала разработку модели по прогнозированию стоимости квартиры 
 ## Используемые библиоткеи
-*pyspark, pandas*
+pyspark
+pandas
+pyspark.sql.SparkSession
+pyspark.sql.types
+pyspark.sql.functions
+pyspark.ml.feature.StringIndexer
+pyspark.ml.feature.OneHotEncoder
+pyspark.ml.feature.VectorAssembler
+pyspark.ml.feature.StandardScaler
+pyspark.ml.regression.LinearRegression
+pyspark.ml.evaluation.RegressionEvaluator
+
+## Общий вывод
+Была разработана модель линейной регрессии для опредления медианной стоимости квартиры с использованием
+pyspark
