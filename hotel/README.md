@@ -2,10 +2,10 @@
 Строится модель прогнозирования отказа от брони клиента. В качестве метрики используется величина выручки, которая получится после внедрения модели машинного обучения.
 
 ## Используемые инструменты
-pandas<br>
-matplotlib<br>
-numpy<br>
-seaborn<br>
+pandas <br>
+matplotlib <br>
+numpy <br>
+seaborn <br>
 cipy.stats<br>
 statsmodels.api<br>
 sklearn.model_selection.train_test_split<br>
