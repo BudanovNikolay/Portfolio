@@ -3,29 +3,41 @@
 ## Описание
 Сервис по продаже квартир закала разработку модели по прогнозированию стоимости квартиры 
 ## Используемые библиоткеи
-pandas as pd
-numpy as np
+*pandas
+*numpy
+*lightgbm
+phik
+seaborn
 sqlalchemy.create_engine
 sqlalchemy.text
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy.stats import boxcox, kruskal
-import phik
-from sklearn.preprocessing import PowerTransformer
-from sklearn.model_selection import train_test_split, RandomizedSearchCV, GridSearchCV, KFold
-from sklearn.pipeline import Pipeline
-from sklearn.utils.class_weight import compute_class_weight
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
-from sklearn.impute import SimpleImputer
-from sklearn.compose import ColumnTransformer
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier, VotingClassifier
-from sklearn.tree import DecisionTreeClassifier
-import lightgbm as lgbm
-from sklearn.metrics import f1_score, roc_auc_score, accuracy_score, roc_curve
-from sklearn.metrics import precision_recall_curve, precision_score, recall_score, confusion_matrix
-from tensorflow import keras
+matplotlib.pyplot
+scipy.stats.boxcox
+scipy.stats.kruskal
+sklearn.preprocessing.PowerTransformer
+sklearn.model_selection.train_test_split 
+sklearn.model_selection.RandomizedSearchCV
+sklearn.model_selection.GridSearchCV
+sklearn.model_selection.KFold
+sklearn.pipeline.Pipeline
+sklearn.utils.class_weight.compute_class_weight
+sklearn.preprocessing.StandardScaler
+sklearn.preprocessing.OneHotEncoder
+sklearn.preprocessing.OrdinalEncoder
+sklearn.impute.SimpleImputer
+sklearn.compose.ColumnTransformer
+sklearn.linear_model.LogisticRegression
+sklearn.ensemble.RandomForestClassifier
+sklearn.ensemble.VotingClassifier
+sklearn.tree.DecisionTreeClassifier
+sklearn.metrics.f1_score
+sklearn.metrics.roc_auc_score
+sklearn.metrics.accuracy_score
+sklearn.metrics.roc_curve
+sklearn.metrics.precision_recall_curve
+sklearn.metrics.precision_score
+sklearn.metrics.recall_score
+sklearn.metrics.confusion_matrix
+tensorflow.keras
 
 ## Общий вывод
-Была разработана модель линейной регрессии для опредления медианной стоимости квартиры с использованием
-pyspark, также была проведена проверка выбранной модели на тестовой выборке
+Была разработана модель для опредления уйдет ли клиент, также была проведена проверка выбранной модели на тестовой выборке
